@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Stick - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <style>
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+            background: #fff;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center calc(80%);
+            background: #f3f4f6;
+        }
+
+        .product-info {
+            padding: 1.25rem;
+        }
+
+        .product-info h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+
+        .product-info .price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 1rem;
+        }
+
+        .add-to-cart {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #111;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #333;
+        }
+
+        .add-to-cart svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .shop-header {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+        }
+
+        .shop-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .shop-header p {
+            color: #6b7280;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background: #fff;">
+    <header style="background: #fff; padding: 1.5rem 2rem; border-bottom: 1px solid #e5e7eb;">
+        <nav style="max-width: 1280px; margin: 0 auto; display: flex; align-items: center; gap: 2rem;">
+            <a href="index.html">
+                <img src="img/logo.png" alt="The Stick" style="height: 2.5rem;">
+            </a>
+            <a href="index.html" style="font-weight: 500; color: #111; text-decoration: none;">Home</a>
+            <a href="shop.html" style="font-weight: 500; color: #111; text-decoration: none;">Shop</a>
+        </nav>
+    </header>
+
+    <div class="shop-header">
+        <h1>The Stick Collection</h1>
+    </div>
+
+    <div class="shop-grid">
+
+        <div class="product-card">
+            <img src="img/IMG_1950.jpg" alt="The Stick - Maple">
+            <div class="product-info">
+                <h2>The Stick &ndash; Maple</h2>
+                <div class="price">900 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/IMG_1958.jpg" alt="The Stick - Oak">
+            <div class="product-info">
+                <h2>The Stick &ndash; Oak</h2>
+                <div class="price">900 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/IMG_1952.jpg" alt="The Stick - Ash">
+            <div class="product-info">
+                <h2>The Stick &ndash; Ash</h2>
+                <div class="price">900 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+
+        <div class="product-card">
+            <img src="img/IMG_1953.jpg" alt="The Stick - Beech">
+            <div class="product-info">
+                <h2>The Stick &ndash; Beech</h2>
+                <div class="price">900 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+
+        <div class="product-card">
+            <img src="img/IMG_1960.jpg" alt="The Stick - Birch">
+            <div class="product-info">
+                <h2>The Stick &ndash; Birch</h2>
+                <div class="price">800 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/IMG_1961.jpg" alt="The Stick - Sallow">
+            <div class="product-info">
+                <h2>The Stick &ndash; Sallow</h2>
+                <div class="price">600 kr</div>
+                <button class="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
