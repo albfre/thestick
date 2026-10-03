@@ -2364,6 +2364,22 @@ select {
 
     .hero {
         min-height: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-image {
+        aspect-ratio: auto;
+        padding: 0;
+    }
+
+    .hero-image img {
+        max-width: min(100%, 28rem);
+    }
+
+    .feature {
+        height: 60vh;
+        min-height: 22rem;
     }
 
     .columns {
@@ -2388,7 +2404,24 @@ select {
         grid-template-columns: 1fr;
     }
 
+    .site-header .wrap {
+        height: 4rem;
+    }
+
+    .site-header img {
+        height: 1.75rem;
+    }
+
     .site-nav {
-        gap: 1.5rem;
+        gap: 1.1rem;
+    }
+
+    .site-nav a {
+        font-size: .66rem;
+        letter-spacing: .14em;
+    }
+
+    .waitlist button {
+        padding-left: 1rem;
     }
 }
