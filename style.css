@@ -1908,7 +1908,7 @@ select {
     padding: 0 clamp(1.25rem, 4vw, 3rem);
 }
 
-/* Header & footer */
+/* Header */
 .site-header {
     position: sticky;
     top: 0;
@@ -1936,8 +1936,7 @@ select {
 }
 
 .site-nav a,
-.eyebrow,
-.site-footer {
+.eyebrow {
     font-size: .72rem;
     font-weight: 400;
     letter-spacing: .22em;
@@ -1965,17 +1964,6 @@ select {
 .site-nav a:hover::after,
 .site-nav a[aria-current="page"]::after {
     transform: scaleX(1);
-}
-
-.site-footer {
-    border-top: 1px solid var(--line);
-    padding: 3rem 0;
-    color: var(--stone);
-}
-
-.site-footer .wrap {
-    display: flex;
-    justify-content: space-between;
 }
 
 /* Typography */
@@ -2266,6 +2254,13 @@ select {
 .add-to-cart:focus-visible {
     background: var(--ink);
     color: var(--paper);
+}
+
+.add-to-cart:disabled {
+    border-color: var(--line);
+    background: transparent;
+    color: var(--stone);
+    cursor: default;
 }
 
 /* Philosophy */
