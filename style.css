@@ -1987,6 +1987,13 @@ select {
     color: var(--oak);
 }
 
+.brand {
+    font-size: .85em;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
 .display-sm {
     font-size: clamp(2rem, 4vw, 3.25rem);
 }
