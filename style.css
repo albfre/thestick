@@ -1891,6 +1891,7 @@ select {
     --oak: #9c7a54;
     --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
     --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+    --page-top: clamp(3rem, 7vw, 6rem);
 }
 
 .theme {
@@ -2021,9 +2022,8 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
-    min-height: calc(100vh - 5rem);
-    padding-top: 4rem;
+    align-items: start;
+    padding-top: var(--page-top);
     padding-bottom: 4rem;
 }
 
@@ -2185,7 +2185,8 @@ select {
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
     align-items: end;
-    padding: clamp(4rem, 8vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
+    padding-top: var(--page-top);
+    padding-bottom: clamp(3rem, 6vw, 5rem);
 }
 
 .page-intro p {
@@ -2265,16 +2266,8 @@ select {
 
 /* Philosophy */
 .article-head {
-    max-width: 52rem;
-    margin: 0 auto;
-    padding-top: clamp(4rem, 8vw, 7rem);
+    padding-top: var(--page-top);
     padding-bottom: clamp(3rem, 6vw, 5rem);
-    text-align: center;
-}
-
-.article-head .lede {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .article-image {
@@ -2331,7 +2324,8 @@ select {
 @media (prefers-reduced-motion: no-preference) {
 
     .hero>*,
-    .page-intro>* {
+    .page-intro>*,
+    .article-head {
         animation: rise 1.1s cubic-bezier(.2, .7, .2, 1) both;
     }
 
@@ -2363,8 +2357,6 @@ select {
     }
 
     .hero {
-        min-height: 0;
-        padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
@@ -2401,7 +2393,31 @@ select {
     }
 
     .shop-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .product-meta {
+        flex-direction: column;
+        gap: .25rem;
+        margin-top: .75rem;
+        padding-top: .6rem;
+    }
+
+    .product h2 {
+        font-size: 1.3rem;
+    }
+
+    .product .price {
+        font-size: .8rem;
+    }
+
+    .add-to-cart {
+        margin-top: .75rem;
+        padding: .7rem .25rem;
+        font-size: .62rem;
+        letter-spacing: .14em;
     }
 
     .site-header .wrap {
