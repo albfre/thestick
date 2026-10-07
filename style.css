@@ -2274,7 +2274,7 @@ select {
 /* Philosophy */
 .article-head {
     padding-top: var(--page-top);
-    padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    padding-bottom: clamp(1rem, 2vw, 1.75rem);
 }
 
 .article-image img {
@@ -2286,7 +2286,7 @@ select {
 .article {
     max-width: 40rem;
     margin: 0 auto;
-    padding-top: clamp(2rem, 4vw, 3.5rem);
+    padding-top: clamp(1.5rem, 3vw, 2.5rem);
     padding-bottom: clamp(4rem, 8vw, 7rem);
 }
 
@@ -2307,7 +2307,7 @@ select {
 }
 
 .article .closing {
-    margin: 3.5rem 0;
+    margin: 2.5rem 0;
     text-align: center;
     font-family: var(--serif);
     font-style: italic;
@@ -2448,7 +2448,7 @@ select {
     }
 
     .article {
-        padding-top: 1.5rem;
+        padding-top: 1.25rem;
     }
 
     .article p {
@@ -2463,7 +2463,7 @@ select {
     }
 
     .article .closing {
-        margin: 1.75rem 0;
+        margin: 1.25rem 0;
         font-size: 1.6rem;
     }
 
