@@ -2129,9 +2129,6 @@ select {
 .woods {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 0px solid var(--line);
 }
 
 .woods li {
