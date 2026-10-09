@@ -2301,8 +2301,7 @@ select {
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    margin-top: .75rem;
     border-top: 1px;
 }
 
